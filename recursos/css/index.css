@@ -1,19 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Bungee&family=Poppins:ital,wght@0,100;0,500;0,900;1,100;1,500;1,900&display=swap');
 
+:root{
+    --terra: #964b00;
+    --agua:#0ff;
+    --fogo:#f22;
+    --ar:beige;
+}
+
 *{
     font-family: 'poppins';
 }
-.terra{
-    color: brown;
+.cTerra, .Hterra:hover{
+    color: var(--terra);
 }
-.agua{
-    color: aqua;
+.cAgua, .Hagua:hover{
+    color: var(--agua);
 }
-.fogo{
-    color: firebrick;
+.cFogo, .Hfogo:hover{
+    color: var(--fogo);
 }
-.ar{
-    color: beige;
+.cAr, .Har:hover{
+    color: var(--ar);
 }
 .sec{
     width: 100%;
@@ -25,6 +32,10 @@
     background-size: 100%;
     background-size: cover;
     background-position: center;
+    transition: ease 500ms;
+}
+.Har:active#secElementos{
+    background: url(../imagens/GreenTech_sm.png);
 }
 a{
     text-decoration: none;

@@ -27,15 +27,23 @@
     min-height: 100vh;
 }
 #secElementos{
-    background: url(../imagens/greenLamp_md.jpg);
     background-repeat: no-repeat;
     background-size: 100%;
     background-size: cover;
     background-position: center;
-    transition: ease 500ms;
+    transition: ease 100ms;
 }
-.Har:active#secElementos{
-    background: url(../imagens/GreenTech_sm.png);
+.imgTerra{
+    background: url(../imagens/menu/terra_md.jpg);
+}
+.imgAgua{
+    background: url(../imagens/menu/agua_md.jpg);
+}
+.imgFogo{
+    background: url(../imagens/menu/fogo_md.jpg);
+}
+.imgAr{
+    background: url(../imagens/menu/ar_md.jpg);
 }
 a{
     text-decoration: none;

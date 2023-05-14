@@ -52,7 +52,7 @@
     <section class="sec container-fluid">
         <div class="row h-100">
             <!--ASIDE-->
-            <aside class="col-xl-3 py-5">
+            <aside class="col-xl-3 py-5 border-end border-1 border-black border-opacity-25">
                 <div class="container d-flex justify-content-center sticky-top py-3">
                     <dl class="m-0">
                         <dt>
@@ -219,28 +219,34 @@
         </div>
     </section>
 
+    <!--Force img Preload-->
+    <div class=" imgTerra"></div>
+    <div class=" imgAgua"></div>
+    <div class=" imgFogo"></div>
+    <div class=" imgAr"></div>
+
     <!--ELEMENTOS-->
-    <section class="sec container-fluid" id="secElementos">
+    <section class="sec container-fluid imgTerra" id="secElementos">
         <div class="container elementos" style="height: 100vh;">
             <div class="row h-100 d-flex align-items-center elementos">
                 <div>
                     <div style="width: min-content;">
-                        <a href="#terra">
+                        <a href="#terra" onclick="toggleElement(this)">
                             <h1 class="Hterra">TERRA</h1>
                         </a>
                     </div>
                     <div style="width: min-content;">
-                        <a href="#agua">
+                        <a href="#agua" onclick="toggleElement(this)">
                             <h1 class="Hagua">ÁGUA</h1>
                         </a>
                     </div>
                     <div style="width: min-content;">
-                        <a href="#fogo">
+                        <a href="#fogo" onclick="toggleElement(this)">
                             <h1 class="Hfogo">FOGO</h1>
                         </a>
                     </div>
                     <div style="width: min-content;">
-                        <a href="#ar">
+                        <a href="#ar" onclick="toggleElement(this)">
                             <h1 class="Har">AR</h1>
                         </a>
                     </div>
@@ -250,7 +256,7 @@
     </section>
 
     <!--TERRA-->
-    <section class="sec container-fluid" id="terra">
+    <section class="sec container-fluid elemento" id="terra">
         <div class="row h-100">
             <!--ASIDE-->
             <aside class="col-xl-3 py-5">
@@ -301,7 +307,7 @@
                                 Poluição direta e contaminação
                             </a>
                         </dt>
-                        <dt>
+                        <dt class="mb-0">
                             <a href="#Tconsideracao" class="titulo">
                                 Considerações
                             </a> 
@@ -414,7 +420,7 @@
     </section>
 
     <!--AGUA-->
-    <section class="sec container-fluid" id="agua">
+    <section class="sec container-fluid elemento d-none" id="agua">
         <div class="row h-100">
             <!--ASIDE-->
             <aside class="col-xl-3 py-5">
@@ -475,7 +481,7 @@
                                 Petróleo
                             </a>
                         </dd>
-                        <dt>
+                        <dt class="mb-0">
                             <a href="#Aconclusao" href="#Aprotecao" class="titulo">
                                 Conclusão
                             </a>
@@ -557,7 +563,7 @@
     </section>
 
     <!--FOGO-->
-    <section class="sec container-fluid" id="fogo">
+    <section class="sec container-fluid elemento d-none" id="fogo">
         <div class="row h-100">
             <!--ASIDE-->
             <aside class="col-xl-3 py-5">
@@ -643,7 +649,7 @@
                                 Qual é a importância da tecnologia da informação na gestão das queimadas?
                             </a>
                         </dd>
-                        <dd>
+                        <dd class="mb-0">
                             <a href="#Fq5" class="secundario">
                                 Qual é o papel da tecnologia da informação no desenvolvimento de soluções?
                             </a>
@@ -855,10 +861,316 @@
         </div>
     </section>
 
-    <footer>
+    <!--AR-->
+    <section class="sec container-fluid elemento d-none" id="ar">
+        <div class="row h-100">
+            <!--ASIDE-->
+            <aside class="col-xl-3 py-5">
+                <div class="container d-flex justify-content-center sticky-top py-3">
+                    <dl class="m-0">
+                        <dt>
+                            <a href="#secElementos" class="titulo cFogo">
+                                4 Elementos
+                            </a>
+                        </dt>
+                        <dt>
+                            <a href="#tituloFogo" class="titulo">
+                                Como a tecnologia pode ser uma aliada no combate às queimadas no Brasil?
+                            </a>
+                        </dt>
+                        <dt>
+                            <a href="#Fimpactos" class="titulo">
+                                Impactos negativos
+                            </a>
+                        </dt>
+                        <dd>
+                            <a href="#Fbiodiversidade" class="secundario">
+                                Biodiversidade e problemas respiratórios
+                            </a>
+                        </dd>
+                        <dd>
+                            <a href="#Feconomia" class="secundario">
+                                Economia e aquecimento global
+                            </a>
+                        </dd>
+                        <dt>
+                            <a href="#Fsolucoes" class="titulo">
+                                As soluções tecnológicas
+                            </a>
+                        </dt>
+                        <dd>
+                            <a href="#Fsatelite" class="secundario">
+                                Satélites e INPE
+                            </a>
+                        </dd>
+                        <dd>
+                            <a href="#Fdrone" class="secundario">
+                                Mapeamento por drones
+                            </a>
+                        </dd>
+                        <dd>
+                            <a href="#FIA" class="secundario">
+                                Inteligência artifical
+                            </a>
+                        </dd>
+                        <dd>
+                            <a href="#Fdenuncia" class="secundario">
+                                Denúncias de atividades ilegais
+                            </a>
+                        </dd>
+                        <dt>
+                            <a href="#Fconclusao" class="titulo">
+                                Conclusão
+                            </a>
+                        </dt>
+                        <dt>
+                            <a href="#Fquiz" class="titulo">
+                                Quiz
+                            </a>
+                        </dt>
+                        <dd>
+                            <a href="#Fq1" class="secundario">
+                                Qual é a importância da tecnologia da informação no monitoramento de queimadas?
+                            </a>
+                        </dd>
+                        <dd>
+                            <a href="#Fq2" class="secundario">
+                                Como a tecnologia da informação pode ajudar na prevenção de queimadas?
+                            </a>
+                        </dd>
+                        <dd>
+                            <a href="#Fq3" class="secundario">
+                                Qual é a principal fonte de dados sobre queimadas no Brasil?
+                            </a>
+                        </dd>
+                        <dd>
+                            <a href="#Fq4" class="secundario">
+                                Qual é a importância da tecnologia da informação na gestão das queimadas?
+                            </a>
+                        </dd>
+                        <dd class="mb-0">
+                            <a href="#Fq5" class="secundario">
+                                Qual é o papel da tecnologia da informação no desenvolvimento de soluções?
+                            </a>
+                        </dd>
+                    </dl>
+                </div>
+            </aside>
+            
+            <article class="col-xl-9 py-5">
+                <div class="container py-3">
 
+                    <h1 class="h1 mb-5 text-center" id="tituloFogo">
+                        Fogo e Tecnologia da Informação: Como a tecnologia pode ser uma aliada na prevenção e combate às queimadas no Brasil?
+                    </h1>
+
+                    <p>
+                        O fogo é um elemento que pode causar impactos negativos significativos no meio ambiente brasileiro. Dentre as consequências estão a perda de biodiversidade, degradação do solo, erosão, poluição do ar, mudanças climáticas, prejuízos econômicos e perda de patrimônio histórico e cultural, tanto material quanto imaterial.
+                    </p>
+                    <p class="text-center">
+                        <img src="recursos/imagens/fogo/F1.jpeg" alt="Imagem" height="500px">
+                    </p>
+                    <p>
+                        Os problemas citados anteriormente são causados em sua grande maioria por queimadas espontâneas e principalmente provocadas por ação humana, que estão relacionadas a agricultura, pecuária, desmatamento ilegal para extração de madeira e outras ações criminosas (IPAM). Essas são um problema ambiental grave no Brasil, especialmente na região amazônica, pantaneira e no Cerrado, 2022 teve uma alta de 93% nas áreas queimadas em florestas (Monitor do Fogo).
+                    </p>
+
+                    <h2 class="h2 my-5 text-center" id="Fimpactos">
+                        Impactos negativos
+                    </h2>
+                    <ul>
+                        <li id="Fbiodiversidade">
+                            Como dito anteriormente, os incêndios florestais têm impactos negativos significativos na biodiversidade, eliminando diversas espécies e colocando diversas outras em risco de extinção, e nos ecossistemas naturais, além de prejudicar a qualidade do ar e a saúde das pessoas. A fumaça das queimadas pode causar problemas respiratórios, especialmente em crianças e idosos.
+                        </li>
+                        <li id="Feconomia">
+                            As queimadas também têm impactos econômicos, afetando as atividades agrícolas e o turismo em áreas afetadas. Além disso, os incêndios florestais podem intensificar o aquecimento global, já que a queima de árvores libera gases de efeito estufa na atmosfera.
+                        </li>
+                    </ul>
+                    <p>
+                        Para combater as queimadas, é importante investir em medidas de prevenção, como a fiscalização e o monitoramento das áreas desmatadas, a implementação de políticas públicas que incentivem práticas sustentáveis de agricultura e pecuária, além da educação ambiental para conscientizar a população sobre a importância da preservação ambiental.
+                    </p>
+                    <p>
+                        É importante ressaltar que grande parte desse problema é exatamente pela falta de fiscalização adequada por parte de órgãos governamentais e também a não penalização daqueles que cometem esses crimes ambientais. Aqueles que acabam sofrendo diretamente a destruição são comunidades indígenas e a própria fauna e flora nacional.
+                    </p>
+                    <p>
+                        O intuito deste artigo é apresentar as principais soluções que a tecnologia da informação oferece para prevenção e redução das queimadas no Brasil, visto que ela pode ser uma importante ferramenta para o combate.
+                    </p>
+
+
+                    <h2 class="h2 my-5 text-center" id="Fsolucoes">
+                        As soluções tecnológicas
+                    </h2>
+
+                    <p>
+                        Na atualidade o mundo da tecnologia da informação vem se desenvolvendo cada vez mais, devido às grandes pesquisas industriais e acadêmicas, o que possibilita uma gama de opções e alternativas para solucionar problemas. No que se refere especificamente às queimadas segundo dados do Laboratório de Aplicações de Satélites Ambientais (Lasa) da Universidade Federal do Rio de Janeiro (UFRJ). Muitos desses focos de incêndio, porém, podem ser previstos com a ajuda da tecnologia.
+                    </p>
+                    <ul>
+                        <li id="Fsatelite">
+                            <p>
+                                Uma das alternativas é o sensoriamento remoto por satélite que pode ser utilizado para monitorar áreas afetadas por queimadas, permitindo uma resposta mais rápida e eficiente das autoridades. Essa atividade é feita pelo INPE (Instituto Nacional de Pesquisas Espaciais), que oferece um sistema de queimadas/incêndios com uma variedade de produtos, como coordenadas geográficas dos focos, alertas por e-mail sobre ocorrências em áreas de interesse especial, risco de fogo e estimativas de concentração de fumaça. Esses produtos são gerados diariamente e distribuídos gratuitamente pelo INPE na internet, cerca de três horas após sua geração. No entanto, o usuário deve arcar com o custo do provedor de internet ou do uso da linha telefônica.
+                            </p>
+                            <p class="text-center">
+                                <img src="recursos/imagens/fogo/F2.jpeg" alt="Imagem" height="500px">
+                            </p>
+                            <p>
+                                Além disso, o CPTEC disponibiliza um mapa da América do Sul na internet que mostra as queimadas detectadas por um conjunto de satélites. Os dados são atualizados a cada três horas, todos os dias do ano.
+                            </p>
+                        </li>
+                        <li id="Fdrone">
+                            Outra alternativa similar é o geoprocessamento de áreas com auxílio de drones, os quais podem ser utilizados para mapeamento e monitoramento de áreas afetadas por queimadas, além de permitir a identificação de focos de incêndio em tempo real e o transporte de materiais para o combate às queimadas.
+                        </li>
+                        <p class="text-center">
+                            <img src="recursos/imagens/fogo/F3.jpeg" alt="Imagem" height="500px">
+                        </p>
+                        <li id="FIA">
+                            As inovadoras e recentes inteligências artificiais podem ser utilizadas para prever a ocorrência de queimadas, por meio do processamento de dados meteorológicos e históricos de incêndios florestais, permitindo uma resposta mais rápida e eficiente das autoridades. Como exemplo delas, tem se  o algoritmo desenvolvido pelo professor Fábio Teodoro de Souza, da Pontifícia Universidade Católica do Paraná (PUCPR), que foi treinado com padrões meteorológicos para identificar se ocorrem ou não incêndios, tendo uma taxa de acerto de 85%.
+                        </li>
+                        <li id="Fdenuncia">
+                            Além das medidas citadas anteriormente, aplicativos móveis podem ser desenvolvidos e utilizados para denúncias de atividades ilegais de desmatamento e queimadas, permitindo que a  própria população contribua para o combate aos incêndios e à degradação ambiental. Como exemplo tem o aplicativo Guardiões do Meio Ambiente desenvolvido para o estado de Rondônia, onde as denúncias podem ser feitas de forma identificada ou anônima, fazendo com que os órgãos de controle e fiscalização possam agir com mais eficiência para identificar e punir devidamente os responsáveis pelas queimadas.
+                        </li>
+                    </ul>
+
+                    <h2 class="h2 my-5 text-center" id="Fconclusao">
+                        Conclusão
+                    </h2>
+
+                    <p>
+                        A tecnologia da informação desempenha um papel crucial no combate às queimadas e na prevenção do desmatamento, desde que seja empregada de forma ética e responsável. É fundamental que ela não apenas seja desenvolvida e implementada, mas também alinhada aos órgãos governamentais que possuem o poder e os recursos necessários para enfrentar efetivamente esse problema.
+                    </p>
+                    <p>
+                        Além disso, é necessário promover e apoiar a conscientização e a educação da população por meio da tecnologia. Isso envolve o uso de recursos tecnológicos para incentivar e facilitar o acesso à informação, de modo a aumentar a compreensão dos impactos negativos das queimadas e do desmatamento, bem como promover a adoção de práticas sustentáveis. <span class="cFogo">Caso deseje testar seus conhecimentos após a leitura faça o quiz!</span>
+                    </p>
+
+                    <form class="container py-5 bg-warning rounded-5" id="Fquiz" onsubmit="verificarQuiz(event)">
+                        <h2 class="h2 mb-5 text-center">
+                            Quiz
+                        </h2>
+                        <ol>
+                            <li id="Fq1">
+                                Qual é a importância da tecnologia da informação no monitoramento de queimadas?
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="Fq1" id="Fq11" value="a" required>
+                                    <label class="form-check-label" for="Fq11">
+                                        Não tem importância
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="Fq1" id="Fq12" value="b">
+                                    <label class="form-check-label" for="Fq12">
+                                        Facilita o compartilhamento de informações sobre queimadas
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="Fq1" id="Fq13" value="c">
+                                    <label class="form-check-label" for="Fq13">
+                                        Aumenta o número de queimadas
+                                    </label>
+                                </div>
+                            </li>
+                            <li id="Fq2">
+                                Como a tecnologia da informação pode ajudar na prevenção de queimadas?
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="Fq2" id="Fq21" value="a" required>
+                                    <label class="form-check-label" for="Fq21">
+                                        Por meio do monitoramento constante do clima
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="Fq2" id="Fq22" value="b">
+                                    <label class="form-check-label" for="Fq22">
+                                        Por meio da identificação de áreas de risco
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="Fq2" id="Fq23" value="c">
+                                    <label class="form-check-label" for="Fq23">
+                                        Por meio da produção de mais combustíveis fósseis
+                                    </label>
+                                </div>
+                            </li>
+                            <li id="Fq3">
+                                Qual é a principal fonte de dados sobre queimadas no Brasil?
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="Fq3" id="Fq31" value="a" required>
+                                    <label class="form-check-label" for="Fq31">
+                                        Satélites
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="Fq3" id="Fq32" value="b">
+                                    <label class="form-check-label" for="Fq32">
+                                        Redes sociais
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="Fq3" id="Fq33" value="c">
+                                    <label class="form-check-label" for="Fq33">
+                                        Telejornais
+                                    </label>
+                                </div>
+                            </li>
+                            <li id="Fq4">
+                                Qual é a importância da tecnologia da informação na gestão de crises relacionadas a queimadas?
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="Fq4" id="Fq41" value="a" required>
+                                    <label class="form-check-label" for="Fq41">
+                                        Não tem importância
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="Fq4" id="Fq42" value="b">
+                                    <label class="form-check-label" for="Fq42">
+                                        Ajuda a coordenar o trabalho das equipes de combate a incêndios
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="Fq4" id="Fq43" value="c">
+                                    <label class="form-check-label" for="Fq43">
+                                        Causa mais danos ao meio ambiente
+                                    </label>
+                                </div>
+                            </li>
+                            <li id="Fq5">
+                                Qual é o papel da tecnologia da informação no desenvolvimento de soluções para reduzir as queimadas?
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="Fq5" id="Fq51" value="a" required>
+                                    <label class="form-check-label" for="Fq51">
+                                        Não tem papel algum
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="Fq5" id="Fq52" value="b">
+                                    <label class="form-check-label" for="Fq52">
+                                        Ajuda a criar sistemas de alerta precoce
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="Fq5" id="Fq53" value="c">
+                                    <label class="form-check-label" for="Fq53">
+                                        Aumenta o número de queimadas
+                                    </label>
+                                </div>
+                            </li>
+                        </ol>
+                        <div class="container d-flex justify-content-end">
+                            <button type="submit" class="btn btn-primary me-0" id="btnQuiz">Verificar</button>
+                        </div>
+                    </form>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!--NEWSLETTER-->
+    <section class="sec conteiner-fluid" id="secNews">
+        NEWSLETTER
+    </section>
+
+    <!--FOOTER-->
+    <footer class="sec container-fluid" id="footer">
+        FOOTER
     </footer>
 
+    <script src="recursos/js/index.js"></script>
     <script src="recursos/js/quiz.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
 </body>

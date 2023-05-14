@@ -4,6 +4,8 @@ function verificarQuiz(e){
     const Questions = document.querySelectorAll("#Fquiz li");
 
     const labels = document.querySelectorAll("#Fquiz label");
+    const labelClassesup = "form-check-label bg-success rounded-2";
+    const labelClassesdown = "form-check-label bg-danger rounded-2";
 
     //Limpando as alterações anteriores
     labels.forEach((label,index) => {
@@ -27,10 +29,10 @@ function verificarQuiz(e){
                     
                     //Valor a ser verificado e resposta correta
                     if(altEscolhida.value == "b"){
-                        txtEscolhido.classList = "form-check-label bg-success";   
+                        txtEscolhido.classList = labelClassesup;   
                     }
                     else{
-                        txtEscolhido.classList = "form-check-label bg-danger";  
+                        txtEscolhido.classList = labelClassesdown;  
                     }
                 }
             break;
@@ -41,10 +43,10 @@ function verificarQuiz(e){
                     
                     //Valor a ser verificado e resposta correta
                     if(altEscolhida.value == "b"){
-                        txtEscolhido.classList = "form-check-label bg-success";   
+                        txtEscolhido.classList = labelClassesup;   
                     }
                     else{
-                        txtEscolhido.classList = "form-check-label bg-danger";  
+                        txtEscolhido.classList = labelClassesdown;  
                     }
                 }   
             break;
@@ -55,10 +57,10 @@ function verificarQuiz(e){
                     
                     //Valor a ser verificado e resposta correta
                     if(altEscolhida.value == "a"){
-                        txtEscolhido.classList = "form-check-label bg-success";   
+                        txtEscolhido.classList = labelClassesup;   
                     }
                     else{
-                        txtEscolhido.classList = "form-check-label bg-danger";  
+                        txtEscolhido.classList = labelClassesdown;  
                     }
                 }   
             break;
@@ -69,10 +71,10 @@ function verificarQuiz(e){
                     
                     //Valor a ser verificado e resposta correta
                     if(altEscolhida.value == "b"){
-                        txtEscolhido.classList = "form-check-label bg-success";   
+                        txtEscolhido.classList = labelClassesup;   
                     }
                     else{
-                        txtEscolhido.classList = "form-check-label bg-danger";  
+                        txtEscolhido.classList = labelClassesdown;  
                     }
                 }   
             break;
@@ -83,10 +85,10 @@ function verificarQuiz(e){
                     
                     //Valor a ser verificado e resposta correta
                     if(altEscolhida.value == "b"){
-                        txtEscolhido.classList = "form-check-label bg-success";   
+                        txtEscolhido.classList = labelClassesup;   
                     }
                     else{
-                        txtEscolhido.classList = "form-check-label bg-danger";  
+                        txtEscolhido.classList = labelClassesdown;  
                     }
                 }   
             break;

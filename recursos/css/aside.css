@@ -7,7 +7,7 @@ dl dt,dd{
 dl .titulo{
     font-size: 16px;
     text-transform: uppercase;
-    transition: 500ms;
+    transition: 100ms;
 }
 dl .secundario{
     font-size: 16px;

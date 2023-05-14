@@ -3,12 +3,24 @@
 *{
     font-family: 'poppins';
 }
+.terra{
+    color: brown;
+}
+.agua{
+    color: aqua;
+}
+.fogo{
+    color: firebrick;
+}
+.ar{
+    color: beige;
+}
 .sec{
     width: 100%;
     min-height: 100vh;
 }
 #secElementos{
-    background: url(../imagens/greenLamp.jpg);
+    background: url(../imagens/greenLamp_md.jpg);
     background-repeat: no-repeat;
     background-size: 100%;
     background-size: cover;

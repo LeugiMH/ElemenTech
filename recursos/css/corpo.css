@@ -2,10 +2,10 @@
 
 p,li{
     font-size: 20px;
-    line-height: 2rem;
+    line-height: 32px;
     font-family: 'poppins';
     font-weight: 400;
-    margin-bottom: 2rem;
+    margin-bottom: 32px;
 }
 ul{
     margin: 0;

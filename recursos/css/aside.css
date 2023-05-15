@@ -2,7 +2,7 @@
 
 dl dt,dd{
     line-height: normal;
-    margin-bottom: .8rem;
+    margin-bottom: 13px;
 }
 dl .titulo{
     font-size: 16px;
@@ -11,7 +11,7 @@ dl .titulo{
 }
 dl .secundario{
     font-size: 16px;
-    margin-left: 2.3rem;
+    margin-left: 35px;
     transition: 100ms;
 }
 .titulo:hover,.secundario:hover{

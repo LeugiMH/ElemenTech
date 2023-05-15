@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="./recursos/css/corpo.css">
 </head>
 <body>
-    <header>
+    <header id="header">
         <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
                 <a class="navbar-brand" href="index.html">
@@ -55,6 +55,11 @@
             <aside class="col-xl-3 py-5 border-end border-1 border-black border-opacity-25">
                 <div class="container d-flex justify-content-center sticky-top py-3">
                     <dl class="m-0">
+                        <dt>
+                            <a href="#header" class="titulo">
+                                Início
+                            </a>
+                        </dt>
                         <dt>
                             <a href="#titulo" class="titulo">
                                 Como a T.I. pode contribuir para destruição do meio ambiente
@@ -135,9 +140,14 @@
                                 Conscientização
                             </a>
                         </dd>
-                        <dt class="mb-0">
-                            <a href="#secElementos" class="titulo">
+                        <dt>
+                            <a href="#secElementos" class="titulo bg-black p-1 rounded-3 text-white">
                                 4 Elementos
+                            </a>
+                        </dt>
+                        <dt class="mb-0">
+                            <a href="#secNews" class="titulo border-1 border-black border-bottom">
+                                Assine conosco
                             </a>
                         </dt>
                     </dl>
@@ -226,7 +236,7 @@
     <div class=" imgAr"></div>
 
     <!--ELEMENTOS-->
-    <section class="sec container-fluid imgTerra" id="secElementos">
+    <section class="sec container-fluid bgImgSetup imgTerra" id="secElementos">
         <div class="container elementos" style="height: 100vh;">
             <div class="row h-100 d-flex align-items-center elementos">
                 <div>
@@ -260,10 +270,10 @@
         <div class="row h-100">
             <!--ASIDE-->
             <aside class="col-xl-3 py-5 border-end border-1 border-black border-opacity-25">
-                <div class="container sticky-top py-3">
+                <div class="container d-flex justify-content-center sticky-top py-3">
                     <dl class="m-0">
                         <dt>
-                            <a href="#secElementos" class="titulo cTerra">
+                            <a href="#secElementos" class="titulo cTerra bg-black p-1 rounded-3">
                                 4 Elementos
                             </a>
                         </dt>
@@ -307,10 +317,15 @@
                                 Poluição direta e contaminação
                             </a>
                         </dt>
-                        <dt class="mb-0">
+                        <dt>
                             <a href="#Tconsideracao" class="titulo">
                                 Considerações
                             </a> 
+                        </dt>
+                        <dt class="mb-0">
+                            <a href="#secNews" class="titulo border-1 border-black border-bottom">
+                                Assine conosco
+                            </a>
                         </dt>
                     </dl>
                 </div>
@@ -427,7 +442,7 @@
                 <div class="container d-flex justify-content-center sticky-top py-3">
                     <dl class="m-0">
                         <dt>
-                            <a href="#secElementos" class="titulo cAgua">
+                            <a href="#secElementos" class="titulo cAgua bg-black p-1 rounded-3">
                                 4 Elementos
                             </a>
                         </dt>
@@ -481,9 +496,14 @@
                                 Petróleo
                             </a>
                         </dd>
-                        <dt class="mb-0">
+                        <dt>
                             <a href="#Aconclusao" href="#Aprotecao" class="titulo">
                                 Conclusão
+                            </a>
+                        </dt>
+                        <dt class="mb-0">
+                            <a href="#secNews" class="titulo border-1 border-black border-bottom">
+                                Assine conosco
                             </a>
                         </dt>
                     </dl>
@@ -493,7 +513,7 @@
             <article class="col-xl-9 py-5">
                 <div class="container py-3">
                     <p>
-                        ARRUMAR: LINK PARA NEWSLETTER, CAIXA DE MENSAGEM
+                        ARRUMAR: CAIXA DE MENSAGEM
                     </p>
                     <h1 class="h1 mb-5 text-center" id="tituloAgua">
                         Água é fundamental para a vida
@@ -570,7 +590,7 @@
                 <div class="container d-flex justify-content-center sticky-top py-3">
                     <dl class="m-0">
                         <dt>
-                            <a href="#secElementos" class="titulo cFogo">
+                            <a href="#secElementos" class="titulo cFogo bg-black p-1 rounded-3">
                                 4 Elementos
                             </a>
                         </dt>
@@ -649,11 +669,16 @@
                                 Qual é a importância da tecnologia da informação na gestão das queimadas?
                             </a>
                         </dd>
-                        <dd class="mb-0">
+                        <dd>
                             <a href="#Fq5" class="secundario">
                                 Qual é o papel da tecnologia da informação no desenvolvimento de soluções?
                             </a>
                         </dd>
+                        <dt class="mb-0">
+                            <a href="#secNews" class="titulo border-1 border-black border-bottom">
+                                Assine conosco
+                            </a>
+                        </dt>
                     </dl>
                 </div>
             </aside>
@@ -741,7 +766,7 @@
                         Além disso, é necessário promover e apoiar a conscientização e a educação da população por meio da tecnologia. Isso envolve o uso de recursos tecnológicos para incentivar e facilitar o acesso à informação, de modo a aumentar a compreensão dos impactos negativos das queimadas e do desmatamento, bem como promover a adoção de práticas sustentáveis. <span class="cFogo">Caso deseje testar seus conhecimentos após a leitura faça o quiz!</span>
                     </p>
 
-                    <form class="container py-5 bg-warning rounded-5" id="Fquiz" onsubmit="verificarQuiz(event)">
+                    <form action="#" method="post" class="container py-5 bg-warning rounded-5" id="Fquiz" onsubmit="verificarQuiz(event)">
                         <h2 class="h2 mb-5 text-center">
                             Quiz
                         </h2>
@@ -869,306 +894,158 @@
                 <div class="container d-flex justify-content-center sticky-top py-3">
                     <dl class="m-0">
                         <dt>
-                            <a href="#secElementos" class="titulo cFogo">
+                            <a href="#secElementos" class="titulo cAr bg-black p-1 rounded-3">
                                 4 Elementos
                             </a>
                         </dt>
                         <dt>
-                            <a href="#tituloFogo" class="titulo">
-                                Como a tecnologia pode ser uma aliada no combate às queimadas no Brasil?
+                            <a href="#tituloAr" class="titulo">
+                                Papel da T.I. na poluição do ar
                             </a>
                         </dt>
                         <dt>
-                            <a href="#Fimpactos" class="titulo">
-                                Impactos negativos
-                            </a>
-                        </dt>
-                        <dd>
-                            <a href="#Fbiodiversidade" class="secundario">
-                                Biodiversidade e problemas respiratórios
-                            </a>
-                        </dd>
-                        <dd>
-                            <a href="#Feconomia" class="secundario">
-                                Economia e aquecimento global
-                            </a>
-                        </dd>
-                        <dt>
-                            <a href="#Fsolucoes" class="titulo">
-                                As soluções tecnológicas
-                            </a>
-                        </dt>
-                        <dd>
-                            <a href="#Fsatelite" class="secundario">
-                                Satélites e INPE
-                            </a>
-                        </dd>
-                        <dd>
-                            <a href="#Fdrone" class="secundario">
-                                Mapeamento por drones
-                            </a>
-                        </dd>
-                        <dd>
-                            <a href="#FIA" class="secundario">
-                                Inteligência artifical
-                            </a>
-                        </dd>
-                        <dd>
-                            <a href="#Fdenuncia" class="secundario">
-                                Denúncias de atividades ilegais
-                            </a>
-                        </dd>
-                        <dt>
-                            <a href="#Fconclusao" class="titulo">
-                                Conclusão
+                            <a href="#Amundo" class="titulo">
+                                Mundo
                             </a>
                         </dt>
                         <dt>
-                            <a href="#Fquiz" class="titulo">
-                                Quiz
+                            <a href="#Aar" class="titulo">
+                                Ar
                             </a>
                         </dt>
-                        <dd>
-                            <a href="#Fq1" class="secundario">
-                                Qual é a importância da tecnologia da informação no monitoramento de queimadas?
+                        <dt>
+                            <a href="#Aindustria" class="titulo">
+                                Indústria
                             </a>
-                        </dd>
-                        <dd>
-                            <a href="#Fq2" class="secundario">
-                                Como a tecnologia da informação pode ajudar na prevenção de queimadas?
+                        </dt>
+                        <dt>
+                            <a href="#Amobilidade" class="titulo">
+                                MOBILIDADE E TRANSPORTE SUSTENTÁVEL
+
                             </a>
-                        </dd>
-                        <dd>
-                            <a href="#Fq3" class="secundario">
-                                Qual é a principal fonte de dados sobre queimadas no Brasil?
+                        </dt>
+                        <dt>
+                            <a href="#Aenergia" class="titulo">
+                                Energia renovável
+
                             </a>
-                        </dd>
-                        <dd>
-                            <a href="#Fq4" class="secundario">
-                                Qual é a importância da tecnologia da informação na gestão das queimadas?
+                        </dt>
+                        <dt class="mb-0">
+                            <a href="#secNews" class="titulo border-1 border-black border-bottom">
+                                Assine conosco
                             </a>
-                        </dd>
-                        <dd class="mb-0">
-                            <a href="#Fq5" class="secundario">
-                                Qual é o papel da tecnologia da informação no desenvolvimento de soluções?
-                            </a>
-                        </dd>
+                        </dt>
                     </dl>
                 </div>
             </aside>
             
             <article class="col-xl-9 py-5">
-                <div class="container py-3">
-
-                    <h1 class="h1 mb-5 text-center" id="tituloFogo">
-                        Fogo e Tecnologia da Informação: Como a tecnologia pode ser uma aliada na prevenção e combate às queimadas no Brasil?
+                <div class="container py-3">    
+                    <p>
+                        ARRUMAR: IMAGENS, listar
+                    </p>
+                    <h1 class="h1 mb-5 text-center" id="tituloAr">
+                        O papel da tecnologia da informação na luta contra a poluição do ar
                     </h1>
 
+                    <h2 class="h2 my-5 text-center" id="Amundo">
+                        MUNDO
+                    </h2>
+                    
                     <p>
-                        O fogo é um elemento que pode causar impactos negativos significativos no meio ambiente brasileiro. Dentre as consequências estão a perda de biodiversidade, degradação do solo, erosão, poluição do ar, mudanças climáticas, prejuízos econômicos e perda de patrimônio histórico e cultural, tanto material quanto imaterial.
+                        De acordo com a Organização Mundial da Saúde (OMS), nove em cada dez pessoas em todo o mundo estão expostas a altos níveis de poluição do ar, resultando na trágica morte de 7 milhões de indivíduos anualmente. Esses dados alarmantes revelam a gravidade do problema global relacionado à qualidade do ar.
+                        A tecnologia da informação desempenha um papel cada vez mais relevante no combate à poluição do ar, oferecendo soluções inovadoras e eficazes para lidar com esse desafio global. Várias abordagens estão sendo adotadas, aproveitando o potencial da tecnologia da informação para monitorar, prever, controlar e conscientizar sobre a qualidade do ar.
                     </p>
                     <p class="text-center">
-                        <img src="recursos/imagens/fogo/F1.jpeg" alt="Imagem" height="500px">
-                    </p>
-                    <p>
-                        Os problemas citados anteriormente são causados em sua grande maioria por queimadas espontâneas e principalmente provocadas por ação humana, que estão relacionadas a agricultura, pecuária, desmatamento ilegal para extração de madeira e outras ações criminosas (IPAM). Essas são um problema ambiental grave no Brasil, especialmente na região amazônica, pantaneira e no Cerrado, 2022 teve uma alta de 93% nas áreas queimadas em florestas (Monitor do Fogo).
+                        <img src="" alt="imagem" width="70%">
                     </p>
 
-                    <h2 class="h2 my-5 text-center" id="Fimpactos">
-                        Impactos negativos
+                    <h2 class="h2 my-5 text-center" id="Aar">
+                        Ar
                     </h2>
-                    <ul>
-                        <li id="Fbiodiversidade">
-                            Como dito anteriormente, os incêndios florestais têm impactos negativos significativos na biodiversidade, eliminando diversas espécies e colocando diversas outras em risco de extinção, e nos ecossistemas naturais, além de prejudicar a qualidade do ar e a saúde das pessoas. A fumaça das queimadas pode causar problemas respiratórios, especialmente em crianças e idosos.
-                        </li>
-                        <li id="Feconomia">
-                            As queimadas também têm impactos econômicos, afetando as atividades agrícolas e o turismo em áreas afetadas. Além disso, os incêndios florestais podem intensificar o aquecimento global, já que a queima de árvores libera gases de efeito estufa na atmosfera.
-                        </li>
-                    </ul>
                     <p>
-                        Para combater as queimadas, é importante investir em medidas de prevenção, como a fiscalização e o monitoramento das áreas desmatadas, a implementação de políticas públicas que incentivem práticas sustentáveis de agricultura e pecuária, além da educação ambiental para conscientizar a população sobre a importância da preservação ambiental.
+                        Por meio de sistemas de monitoramento contínuo das emissões (IBAMA, INPE e IEMA), sensores e dispositivos conectados são usados para medir e registrar as emissões de poluentes industriais em tempo real. Através de sensores conectados à internet, é possível coletar informações detalhadas sobre a concentração de poluentes atmosféricos em diferentes áreas urbanas e industriais. Esses dados são transmitidos e armazenados em sistemas de TI para análise e visualização, o que ajuda pesquisadores e autoridades a desenvolver estratégias eficazes de mitigação. O PNUMA e a empresa suíça IQAir atualizaram a maior plataforma de dados de qualidade do ar do mundo, utilizando dados em tempo real de fontes governamentais, públicas, cidadãos, pesquisadores, inteligência artificial e satélites. Essa atualização foi uma resposta à recente resolução da ONU que reafirmou o direito humano a um meio ambiente limpo, saudável e sustentável.
                     </p>
-                    <p>
-                        É importante ressaltar que grande parte desse problema é exatamente pela falta de fiscalização adequada por parte de órgãos governamentais e também a não penalização daqueles que cometem esses crimes ambientais. Aqueles que acabam sofrendo diretamente a destruição são comunidades indígenas e a própria fauna e flora nacional.
+                    <p class="text-center">
+                        <img src="" alt="imagem" width="70%">
                     </p>
-                    <p>
-                        O intuito deste artigo é apresentar as principais soluções que a tecnologia da informação oferece para prevenção e redução das queimadas no Brasil, visto que ela pode ser uma importante ferramenta para o combate.
-                    </p>
-
-
-                    <h2 class="h2 my-5 text-center" id="Fsolucoes">
-                        As soluções tecnológicas
+                    
+                    <h2 class="h2 my-5 text-center" id="Aindustria">
+                        INDÚSTRIA
                     </h2>
 
                     <p>
-                        Na atualidade o mundo da tecnologia da informação vem se desenvolvendo cada vez mais, devido às grandes pesquisas industriais e acadêmicas, o que possibilita uma gama de opções e alternativas para solucionar problemas. No que se refere especificamente às queimadas segundo dados do Laboratório de Aplicações de Satélites Ambientais (Lasa) da Universidade Federal do Rio de Janeiro (UFRJ). Muitos desses focos de incêndio, porém, podem ser previstos com a ajuda da tecnologia.
+                        A indústria de processos, como a fabricação de aço e cimento, é responsável por altas emissões de CO², contribuindo com 5% das emissões totais do Brasil. Esses dados alarmantes, obtidos por meio do SEEG (Sistema de Estimativas de Emissões de Gases de Efeito Estufa) do Observatório do Clima, ressaltam a necessidade urgente de práticas industriais voltadas para a redução dos impactos ambientais. Essa abordagem está em sintonia com a crescente tendência global das práticas ESG (Environmental, Social and Governance). As tecnologias da Indústria 4.0, como a Inteligência Artificial, desempenham um papel fundamental na promoção de práticas ambientais responsáveis, reduzindo o consumo de energia, matéria-prima e recursos naturais. A tecnologia da informação impulsiona a modelagem e previsão da qualidade do ar, permitindo a adoção de medidas preventivas e o cumprimento das regulamentações ambientais. A Inteligência Artificial otimiza o consumo energético, controla a emissão de poluentes e gerência resíduos de forma eficiente, promovendo uma abordagem mais sustentável na indústria.
                     </p>
-                    <ul>
-                        <li id="Fsatelite">
-                            <p>
-                                Uma das alternativas é o sensoriamento remoto por satélite que pode ser utilizado para monitorar áreas afetadas por queimadas, permitindo uma resposta mais rápida e eficiente das autoridades. Essa atividade é feita pelo INPE (Instituto Nacional de Pesquisas Espaciais), que oferece um sistema de queimadas/incêndios com uma variedade de produtos, como coordenadas geográficas dos focos, alertas por e-mail sobre ocorrências em áreas de interesse especial, risco de fogo e estimativas de concentração de fumaça. Esses produtos são gerados diariamente e distribuídos gratuitamente pelo INPE na internet, cerca de três horas após sua geração. No entanto, o usuário deve arcar com o custo do provedor de internet ou do uso da linha telefônica.
-                            </p>
-                            <p class="text-center">
-                                <img src="recursos/imagens/fogo/F2.jpeg" alt="Imagem" height="500px">
-                            </p>
-                            <p>
-                                Além disso, o CPTEC disponibiliza um mapa da América do Sul na internet que mostra as queimadas detectadas por um conjunto de satélites. Os dados são atualizados a cada três horas, todos os dias do ano.
-                            </p>
-                        </li>
-                        <li id="Fdrone">
-                            Outra alternativa similar é o geoprocessamento de áreas com auxílio de drones, os quais podem ser utilizados para mapeamento e monitoramento de áreas afetadas por queimadas, além de permitir a identificação de focos de incêndio em tempo real e o transporte de materiais para o combate às queimadas.
-                        </li>
-                        <p class="text-center">
-                            <img src="recursos/imagens/fogo/F3.jpeg" alt="Imagem" height="500px">
-                        </p>
-                        <li id="FIA">
-                            As inovadoras e recentes inteligências artificiais podem ser utilizadas para prever a ocorrência de queimadas, por meio do processamento de dados meteorológicos e históricos de incêndios florestais, permitindo uma resposta mais rápida e eficiente das autoridades. Como exemplo delas, tem se  o algoritmo desenvolvido pelo professor Fábio Teodoro de Souza, da Pontifícia Universidade Católica do Paraná (PUCPR), que foi treinado com padrões meteorológicos para identificar se ocorrem ou não incêndios, tendo uma taxa de acerto de 85%.
-                        </li>
-                        <li id="Fdenuncia">
-                            Além das medidas citadas anteriormente, aplicativos móveis podem ser desenvolvidos e utilizados para denúncias de atividades ilegais de desmatamento e queimadas, permitindo que a  própria população contribua para o combate aos incêndios e à degradação ambiental. Como exemplo tem o aplicativo Guardiões do Meio Ambiente desenvolvido para o estado de Rondônia, onde as denúncias podem ser feitas de forma identificada ou anônima, fazendo com que os órgãos de controle e fiscalização possam agir com mais eficiência para identificar e punir devidamente os responsáveis pelas queimadas.
-                        </li>
-                    </ul>
+                    <p class="text-center">
+                        <img src="" alt="imagem" width="70%">
+                    </p>
 
-                    <h2 class="h2 my-5 text-center" id="Fconclusao">
-                        Conclusão
+                    <h2 class=" h2 my-5 text-center" id="Amobilidade">
+                        MOBILIDADE E TRANSPORTE SUSTENTÁVEL
                     </h2>
 
                     <p>
-                        A tecnologia da informação desempenha um papel crucial no combate às queimadas e na prevenção do desmatamento, desde que seja empregada de forma ética e responsável. É fundamental que ela não apenas seja desenvolvida e implementada, mas também alinhada aos órgãos governamentais que possuem o poder e os recursos necessários para enfrentar efetivamente esse problema.
+                        As tecnologias da informação desempenham um papel crucial na promoção da mobilidade inteligente e do transporte sustentável, contribuindo para a redução da poluição do ar. Através de aplicativos móveis e plataformas online, os usuários têm acesso a informações em tempo real sobre a qualidade do ar, permitindo a escolha de rotas menos poluídas. Esses aplicativos também fornecem alertas e sugestões de rotas com base na qualidade do ar, ajudando as pessoas a evitar áreas com altos níveis de poluição. Além disso, os sistemas de gerenciamento de tráfego inteligente utilizam dados em tempo real para otimizar o fluxo de veículos, reduzindo congestionamentos e, consequentemente, diminuindo a emissão de gases poluentes. A tecnologia da informação também desempenha um papel importante na sensibilização e engajamento público, utilizando plataformas online e mídias sociais para divulgar informações sobre os efeitos nocivos da poluição do ar, promovendo campanhas de conscientização direcionadas a diferentes grupos demográficos e compartilhando experiências, dicas e iniciativas relacionadas à qualidade do ar.
                     </p>
-                    <p>
-                        Além disso, é necessário promover e apoiar a conscientização e a educação da população por meio da tecnologia. Isso envolve o uso de recursos tecnológicos para incentivar e facilitar o acesso à informação, de modo a aumentar a compreensão dos impactos negativos das queimadas e do desmatamento, bem como promover a adoção de práticas sustentáveis. <span class="cFogo">Caso deseje testar seus conhecimentos após a leitura faça o quiz!</span>
+                    <p class="text-center">
+                        <img src="" alt="Imagem" width="70%">
                     </p>
 
-                    <form class="container py-5 bg-warning rounded-5" id="Fquiz" onsubmit="verificarQuiz(event)">
-                        <h2 class="h2 mb-5 text-center">
-                            Quiz
-                        </h2>
-                        <ol>
-                            <li id="Fq1">
-                                Qual é a importância da tecnologia da informação no monitoramento de queimadas?
-                                <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="Fq1" id="Fq11" value="a" required>
-                                    <label class="form-check-label" for="Fq11">
-                                        Não tem importância
-                                    </label>
-                                </div>
-                                <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="Fq1" id="Fq12" value="b">
-                                    <label class="form-check-label" for="Fq12">
-                                        Facilita o compartilhamento de informações sobre queimadas
-                                    </label>
-                                </div>
-                                <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="Fq1" id="Fq13" value="c">
-                                    <label class="form-check-label" for="Fq13">
-                                        Aumenta o número de queimadas
-                                    </label>
-                                </div>
-                            </li>
-                            <li id="Fq2">
-                                Como a tecnologia da informação pode ajudar na prevenção de queimadas?
-                                <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="Fq2" id="Fq21" value="a" required>
-                                    <label class="form-check-label" for="Fq21">
-                                        Por meio do monitoramento constante do clima
-                                    </label>
-                                </div>
-                                <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="Fq2" id="Fq22" value="b">
-                                    <label class="form-check-label" for="Fq22">
-                                        Por meio da identificação de áreas de risco
-                                    </label>
-                                </div>
-                                <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="Fq2" id="Fq23" value="c">
-                                    <label class="form-check-label" for="Fq23">
-                                        Por meio da produção de mais combustíveis fósseis
-                                    </label>
-                                </div>
-                            </li>
-                            <li id="Fq3">
-                                Qual é a principal fonte de dados sobre queimadas no Brasil?
-                                <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="Fq3" id="Fq31" value="a" required>
-                                    <label class="form-check-label" for="Fq31">
-                                        Satélites
-                                    </label>
-                                </div>
-                                <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="Fq3" id="Fq32" value="b">
-                                    <label class="form-check-label" for="Fq32">
-                                        Redes sociais
-                                    </label>
-                                </div>
-                                <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="Fq3" id="Fq33" value="c">
-                                    <label class="form-check-label" for="Fq33">
-                                        Telejornais
-                                    </label>
-                                </div>
-                            </li>
-                            <li id="Fq4">
-                                Qual é a importância da tecnologia da informação na gestão de crises relacionadas a queimadas?
-                                <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="Fq4" id="Fq41" value="a" required>
-                                    <label class="form-check-label" for="Fq41">
-                                        Não tem importância
-                                    </label>
-                                </div>
-                                <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="Fq4" id="Fq42" value="b">
-                                    <label class="form-check-label" for="Fq42">
-                                        Ajuda a coordenar o trabalho das equipes de combate a incêndios
-                                    </label>
-                                </div>
-                                <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="Fq4" id="Fq43" value="c">
-                                    <label class="form-check-label" for="Fq43">
-                                        Causa mais danos ao meio ambiente
-                                    </label>
-                                </div>
-                            </li>
-                            <li id="Fq5">
-                                Qual é o papel da tecnologia da informação no desenvolvimento de soluções para reduzir as queimadas?
-                                <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="Fq5" id="Fq51" value="a" required>
-                                    <label class="form-check-label" for="Fq51">
-                                        Não tem papel algum
-                                    </label>
-                                </div>
-                                <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="Fq5" id="Fq52" value="b">
-                                    <label class="form-check-label" for="Fq52">
-                                        Ajuda a criar sistemas de alerta precoce
-                                    </label>
-                                </div>
-                                <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="Fq5" id="Fq53" value="c">
-                                    <label class="form-check-label" for="Fq53">
-                                        Aumenta o número de queimadas
-                                    </label>
-                                </div>
-                            </li>
-                        </ol>
-                        <div class="container d-flex justify-content-end">
-                            <button type="submit" class="btn btn-primary me-0" id="btnQuiz">Verificar</button>
-                        </div>
-                    </form>
+                    <h2 class="h2 my-5 text-center" id="Aenergia">
+                        ENERGIA RENOVÁVEL
+                    </h2>
+
+                    <p>
+                        A tecnologia da informação desempenha um papel fundamental no desenvolvimento de soluções de energia limpa e eficiência energética. Os sistemas de gerenciamento inteligente de energia em edifícios utilizam dados de sensores para otimizar o consumo de energia, reduzindo as emissões de gases poluentes. Além disso, a tecnologia impulsiona o desenvolvimento de fontes de energia renovável, como a solar e eólica, como alternativas mais sustentáveis. No contexto dos veículos, a tecnologia da informação é essencial no monitoramento e controle, especialmente para veículos elétricos e autônomos. Os sistemas de gerenciamento de frotas utilizam a tecnologia para otimizar rotas, agendar manutenções e reduzir as emissões. A transição para veículos elétricos também contribui para a melhoria da qualidade do ar nas áreas urbanas.
+
+                    </p>
+                    <p class="text-center">
+                        <img src="" alt="Imagem" width="70%">
+                    </p>
+                    <p>
+                        Em conclusão, a tecnologia da informação desempenha um papel vital no combate à poluição do ar, oferecendo soluções inovadoras e eficientes. Com sua aplicação eficiente e sustentável, podemos avançar em direção a um futuro mais verde, reduzindo os impactos negativos da poluição do ar no meio ambiente e na saúde humana. Além das abordagens mencionadas, a tecnologia da informação impulsiona o desenvolvimento de dispositivos de controle de poluição, otimiza o consumo de energia e facilita a implementação de políticas ambientais eficazes. No entanto, é necessário combinar essas soluções tecnológicas com esforços contínuos de conscientização e educação ambiental. O engajamento da sociedade é essencial para garantir a eficácia das soluções tecnológicas e a adoção de medidas individuais e coletivas para reduzir a poluição do ar. É crucial continuar investindo em pesquisa e desenvolvimento, promover parcerias entre setores público e privado e adotar uma abordagem multidisciplinar para enfrentar o desafio da poluição do ar e criar um ambiente saudável e sustentável para as gerações futuras.
+                    </p>
+                    <p class="text-center">
+                        <img src="" alt="Imagem" width="70%">
+                    </p>
                 </div>
             </article>
         </div>
     </section>
 
     <!--NEWSLETTER-->
-    <section class="sec conteiner-fluid" id="secNews">
-        NEWSLETTER
+    <section class="sec conteiner-fluid bgImgSetup imgNewsletter" id="secNews">
+        <div class="d-flex align-items-center" style="height: 100vh;">
+            <div class="row container-fluid w-100 py-5 m-0 px-0 bg-white bg-opacity-50">
+                <div class="col-md-6 d-flex flex-column text-center justify-content-center py-5 border-end border-black border-opacity-50">
+                    <h1 class="h1 my-3">
+                        Newsletter
+                    </h1>
+                    <p>
+                        Deseja receber futuras notícias e se atualizar de tudo o que acontece no meio ambiente e como a tecnologia está envolvida nisso?
+                    </p>
+                </div>
+                <div class="col-md-6 py-5 d-flex align-items-center">
+                    <form action="#" method="post" class="w-100" onsubmit="event.preventDefault();">
+                        <label for="email" class="form-label">E-mail</label>
+                        <div class="input-group">
+                            <input type="email" class="form-control" id="email" placeholder="nome@exemplo.com" required>
+                            <button type="submit" class="btn btn-primary">Assinar</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <!--FOOTER-->
-    <footer class="sec container-fluid" id="footer">
-        FOOTER
+    <!--FOOTER
+    <footer class="container-fluid bg-black text-white" id="footer">
+        <div class="row h-100">
+            FOOTER
+        </div>
     </footer>
+    -->
 
     <script src="recursos/js/index.js"></script>
     <script src="recursos/js/quiz.js"></script>

@@ -16,16 +16,16 @@ function toggleElement(btn){
     //Atualizando a imagem
     switch(btnLink){
         case "#terra":
-            menuElementos.className = "sec container-fluid imgTerra";
+            menuElementos.className = "sec container-fluid bgImgSetup imgTerra";
         break;
         case "#agua":
-            menuElementos.classList = "sec container-fluid imgAgua";
+            menuElementos.classList = "sec container-fluid bgImgSetup imgAgua";
         break;
         case "#fogo":
-            menuElementos.classList = "sec container-fluid imgFogo";
+            menuElementos.classList = "sec container-fluid bgImgSetup imgFogo";
         break;
         case "#ar":
-            menuElementos.classList = "sec container-fluid imgAr";
+            menuElementos.classList = "sec container-fluid bgImgSetup imgAr";
         break;
     }
 }

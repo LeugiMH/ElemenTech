@@ -26,12 +26,13 @@
     width: 100%;
     min-height: 100vh;
 }
-#secElementos{
-    background-repeat: no-repeat;
-    background-size: 100%;
-    background-size: cover;
-    background-position: center;
-    transition: ease 100ms;
+.bgImgSetup{
+    background-repeat: no-repeat !important;
+    background-size: 100% !important;
+    background-size: cover !important;
+    background-position: center !important;
+    transition: ease 100ms !important;
+    background-attachment: fixed !important;
 }
 .imgTerra{
     background: url(../imagens/menu/terra_md.jpg);
@@ -44,6 +45,11 @@
 }
 .imgAr{
     background: url(../imagens/menu/ar_md.jpg);
+    background-position: bottom !important;
+}
+.imgNewsletter{
+    background: url(../imagens/newsletter.jpg);
+    background-position: bottom !important;
 }
 a{
     text-decoration: none;

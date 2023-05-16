@@ -1,97 +1,31 @@
-function verificarQuiz(e){
-    e.preventDefault();
+function verificarQuiz(quiz,event){
+    event.preventDefault();
 
-    const Questions = document.querySelectorAll("#Fquiz li");
+    const questions = quiz.querySelectorAll("ol li");
 
-    const labels = document.querySelectorAll("#Fquiz label");
+    //Definindo classes de estilização para as alternativas
     const labelClassesup = "form-check-label bg-success rounded-2";
     const labelClassesdown = "form-check-label bg-danger rounded-2";
 
-    //Limpando as alterações anteriores
-    labels.forEach((label,index) => {
-        label.classList = "form-check-label";
-    });
+    //*Para cada questão
+    questions.forEach((question) => {
+        const labels = question.querySelectorAll("div label");
 
+        //Pegando o input e o label do mesmo
+        const altEscolhida = question.querySelector("input:checked");
+        const labelEscolhido = question.querySelector(`label[for=${altEscolhida.id}]`);
 
-    /* 
-    *sei que tem formas infinitamente mais simples de fazer oq esse código faz, 
-    *porém eu queria fazer um código limpo e que fosse impossível de saber a resposta
-    *apenas observando o html da página. e que seja fácil de definir a resposta correta
-    */
-    Questions.forEach((quest,QuestNum) => {
+        //Resetando todas as alterações anteriores
+        labels.forEach((label) => {
+            label.classList = "form-check-label";
+        });
 
-        //filtro para cada questão
-        switch(QuestNum){
-            case 0:
-                {
-                    const altEscolhida = quest.querySelector("input:checked");
-                    const txtEscolhido = quest.querySelector(`label[for=${altEscolhida.id}]`);
-                    
-                    //Valor a ser verificado e resposta correta
-                    if(altEscolhida.value == "b"){
-                        txtEscolhido.classList = labelClassesup;   
-                    }
-                    else{
-                        txtEscolhido.classList = labelClassesdown;  
-                    }
-                }
-            break;
-            case 1:
-                {
-                    const altEscolhida = quest.querySelector("input:checked");
-                    const txtEscolhido = quest.querySelector(`label[for=${altEscolhida.id}]`);
-                    
-                    //Valor a ser verificado e resposta correta
-                    if(altEscolhida.value == "b"){
-                        txtEscolhido.classList = labelClassesup;   
-                    }
-                    else{
-                        txtEscolhido.classList = labelClassesdown;  
-                    }
-                }   
-            break;
-            case 2:
-                {
-                    const altEscolhida = quest.querySelector("input:checked");
-                    const txtEscolhido = quest.querySelector(`label[for=${altEscolhida.id}]`);
-                    
-                    //Valor a ser verificado e resposta correta
-                    if(altEscolhida.value == "a"){
-                        txtEscolhido.classList = labelClassesup;   
-                    }
-                    else{
-                        txtEscolhido.classList = labelClassesdown;  
-                    }
-                }   
-            break;
-            case 3:
-                {
-                    const altEscolhida = quest.querySelector("input:checked");
-                    const txtEscolhido = quest.querySelector(`label[for=${altEscolhida.id}]`);
-                    
-                    //Valor a ser verificado e resposta correta
-                    if(altEscolhida.value == "b"){
-                        txtEscolhido.classList = labelClassesup;   
-                    }
-                    else{
-                        txtEscolhido.classList = labelClassesdown;  
-                    }
-                }   
-            break;
-            case 4:
-                {
-                    const altEscolhida = quest.querySelector("input:checked");
-                    const txtEscolhido = quest.querySelector(`label[for=${altEscolhida.id}]`);
-                    
-                    //Valor a ser verificado e resposta correta
-                    if(altEscolhida.value == "b"){
-                        txtEscolhido.classList = labelClassesup;   
-                    }
-                    else{
-                        txtEscolhido.classList = labelClassesdown;  
-                    }
-                }   
-            break;
+        //Verificando se acertou ou não 
+        if(altEscolhida.value == question.getAttribute("data-quiz")){
+            labelEscolhido.classList = labelClassesup;   
+        }
+        else{
+            labelEscolhido.classList = labelClassesdown;  
         }
     });
 }

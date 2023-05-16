@@ -6,6 +6,18 @@
     --fogo:#f22;
     --ar:beige;
 }
+.bg-terra{
+    background-color: #964b0044;
+}
+.bg-agua{
+    background-color: #00ffff44;
+}
+.bg-fogo{
+    background-color: #ff222244;
+}
+.bg-ar{
+    background-color: #f5f5dcff;
+}
 
 *{
     font-family: 'poppins';

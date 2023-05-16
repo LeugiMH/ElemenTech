@@ -324,6 +324,11 @@
                                 Considerações
                             </a> 
                         </dt>
+                        <dt>
+                            <a href="#Trquiz" class="titulo">
+                                Quiz
+                            </a> 
+                        </dt>
                         <dt class="mb-0">
                             <a href="#secNews" class="titulo border-1 border-black border-bottom">
                                 Assine conosco
@@ -436,10 +441,125 @@
                     <p>
                         Em suma, a tecnologia da informação tornou-se uma poderosa aliada na preservação do solo. Por meio de aplicativos educativos, jogos interativos e conteúdos multimídia, é possível disseminar conhecimento de forma acessível e envolvente. Isso ajuda a sensibilizar as pessoas para a importância da preservação do solo e a promover mudanças de comportamento em direção a práticas mais sustentáveis.
                     </p>
-                    <p class="mb-0">
+                    <p>
                         Através da coleta e análise de dados como , compartilhamento de conhecimentos, implementação de sistemas de monitoramento e educação, ela desempenha um papel fundamental na gestão sustentável dos recursos naturais. Ao utilizar a tecnologia de maneira consciente e inovadora, podemos enfrentar os desafios ambientais de forma mais eficaz, garantindo a preservação do solo para as gerações futuras.
                     </p>
                     
+                    <form action="#" method="post" class="container py-5 bg-terra rounded-5" id="Trquiz" onsubmit="verificarQuiz(this,event)">
+                        <h2 class="h2 mb-5 text-center">
+                            Quiz
+                        </h2>
+                        <ol>
+                            <li id="Trq1" data-quiz="b">
+                                Qual é um dos principais desafios enfrentados na preservação do solo?
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="q1" id="Trq11" value="a" required>
+                                    <label class="form-check-label" for="Trq11">
+                                        Poluição atmosférica
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="q1" id="Trq12" value="b">
+                                    <label class="form-check-label" for="Trq12">
+                                        Desertificação
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="q1" id="Trq13" value="c">
+                                    <label class="form-check-label" for="Trq13">
+                                        Contaminação de água
+                                    </label>
+                                </div>
+                            </li>
+                            <li id="Trq2" data-quiz="b">
+                                Como a tecnologia da informação pode auxiliar na prevenção da desertificação?
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="q2" id="Trq21" value="a" required>
+                                    <label class="form-check-label" for="Trq21">
+                                        Através da automação de processos produtivos
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="q2" id="Trq22" value="b">
+                                    <label class="form-check-label" for="Trq22">
+                                        Por meio do monitoramento remoto do uso da terra
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="q2" id="Trq23" value="c">
+                                    <label class="form-check-label" for="Trq23">
+                                        Utilizando sistemas de irrigação inteligentes
+                                    </label>
+                                </div>
+                            </li>
+                            <li id="Trq3" data-quiz="b">
+                                O que é arenização do solo?
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="q3" id="Trq31" value="a" required>
+                                    <label class="form-check-label" for="Trq31">
+                                        Excesso de acúmulo de sais minerais
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="q3" id="Trq32" value="b">
+                                    <label class="form-check-label" for="Trq32">
+                                        Formação de bancos de areia em solos predispostos
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="q3" id="Trq33" value="c">
+                                    <label class="form-check-label" for="Trq33">
+                                        Degradação e perda da capacidade produtiva do solo
+                                    </label>
+                                </div>
+                            </li>
+                            <li id="Trq4" data-quiz="c">
+                                Como a tecnologia da informação pode ajudar na prevenção da salinização do solo?
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="q4" id="Trq41" value="a" required>
+                                    <label class="form-check-label" for="Trq41">
+                                        Através da criação de sistemas de informação geográfica (SIG)
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="q4" id="Trq42" value="b">
+                                    <label class="form-check-label" for="Trq42">
+                                        Utilizando sensores inteligentes para monitorar a qualidade do solo
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="q4" id="Trq43" value="c">
+                                    <label class="form-check-label" for="Trq43">
+                                        Implementando práticas de agricultura de precisão
+                                    </label>
+                                </div>
+                            </li>
+                            <li id="Trq5" data-quiz="a">
+                                Além do monitoramento e prevenção de problemas ambientais, como mais a tecnologia da informação pode contribuir para a preservação do solo?
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="q5" id="Trq51" value="a" required>
+                                    <label class="form-check-label" for="Trq51">
+                                        Por meio de aplicativos educativos e jogos interativos para disseminar conhecimento
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="q5" id="Trq52" value="b">
+                                    <label class="form-check-label" for="Trq52">
+                                        Utilizando softwares de modelagem para prever a evolução da salinidade do solo
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="q5" id="Trq53" value="c">
+                                    <label class="form-check-label" for="Trq53">
+                                        Automatizando processos produtivos para reduzir o impacto ambiental
+                                    </label>
+                                </div>
+                            </li>
+                        </ol>
+                        <div class="container d-flex justify-content-end">
+                            <button type="submit" class="btn btn-primary me-0" id="btnQuiz">Verificar</button>
+                        </div>
+                    </form>
                 </div>
             </article>
         </div>
@@ -463,37 +583,37 @@
                             </a>
                         </dt>
                         <dt>
-                            <a href="#Aproblemas" class="titulo">
+                            <a href="#Agproblemas" class="titulo">
                                 Problemas ambientais
                             </a>
                         </dt>
                         <dd>
-                            <a href="#Aquimicoorganico" class="secundario">
+                            <a href="#Agquimicoorganico" class="secundario">
                                 Químico orgânico
                             </a>
                         </dd>
                         <dd>
-                            <a href="#Aagrotoxicoerr" class="secundario">
+                            <a href="#Agagrotoxicoerr" class="secundario">
                                 Agrotóxicos
                             </a>
                         </dd>
                         <dd>
-                            <a href="#Aesgotoerr" class="secundario">
+                            <a href="#Agesgotoerr" class="secundario">
                                 Esgoto
                             </a>
                         </dd>
                         <dd>
-                            <a href="#Apetroleo" class="secundario">
+                            <a href="#Agpetroleo" class="secundario">
                                 Petróleo
                             </a>
                         </dd>
                         <dt>
-                            <a href="#Aprotecao" class="titulo">
+                            <a href="#Agprotecao" class="titulo">
                                 Proteção da água: Tecnologia da Informação como solução
                             </a>
                         </dt>
                         <dd>
-                            <a href="#Aesgoto" class="secundario">
+                            <a href="#Agesgoto" class="secundario">
                                 Agrotóxicos
                             </a>
                         </dd>
@@ -503,13 +623,18 @@
                             </a>
                         </dd>
                         <dd>
-                            <a href="#Afiscalizacao" class="secundario">
+                            <a href="#Agfiscalizacao" class="secundario">
                                 Petróleo
                             </a>
                         </dd>
                         <dt>
-                            <a href="#Aconclusao" href="#Aprotecao" class="titulo">
+                            <a href="#Agconclusao" class="titulo">
                                 Conclusão
+                            </a>
+                        </dt>
+                        <dt>
+                            <a href="#Agquiz" class="titulo">
+                                Quiz
                             </a>
                         </dt>
                         <dt class="mb-0">
@@ -534,21 +659,21 @@
                         A água é um dos recursos naturais mais importantes do planeta, sendo fundamental para a sobrevivência de todas as formas de vida na Terra. No entanto, apesar da sua importância, a água vem sendo cada vez mais afetada por diversos problemas ambientais, que afetam diretamente sua qualidade e disponibilidade.
                     </p>
 
-                    <h2 class="h2 my-5 text-center" id="Aproblemas">
+                    <h2 class="h2 my-5 text-center" id="Agproblemas">
                         Problemas Ambientais envolvendo a água
                     </h2>
 
                     <ul>
-                        <li id="Aquimicoorganico">
+                        <li id="Agquimicoorganico">
                             Um dos principais problemas relacionados à água é a poluição, que ocorre quando substâncias químicas, orgânicas e inorgânicas são lançadas nos rios, lagos e oceanos, comprometendo a qualidade da água e a saúde dos ecossistemas aquáticos. No Brasil, a poluição hídrica é um problema recorrente, sendo causada principalmente por indústrias, agropecuária, mineração e pelo lançamento inadequado de esgotos domésticos.
                         </li>
-                        <li id="Aagrotoxicoerr">
+                        <li id="Agagrotoxicoerr">
                             Além da poluição, outro problema relacionado à água é o uso excessivo de agrotóxicos na agricultura. O Brasil é um dos maiores consumidores mundiais de agrotóxicos, sendo que muitos desses produtos acabam contaminando os rios e lagos próximos às áreas agrícolas, afetando a saúde das pessoas e dos ecossistemas aquáticos.
                         </li>
-                        <li id="Aesgotoerr">
+                        <li id="Agesgotoerr">
                             Outra fonte de contaminação da água no Brasil é o lançamento inadequado de esgotos domésticos. Muitas cidades brasileiras não possuem sistemas de tratamento de esgoto eficientes, o que resulta no lançamento de grandes quantidades de resíduos orgânicos e químicos nos rios e lagos.
                         </li>
-                        <li id="Apetroleo">
+                        <li id="Agpetroleo">
                             Por fim, o vazamento de óleo e petróleo também é uma fonte de contaminação da água no Brasil. Acidentes com plataformas petrolíferas, como o que ocorreu em 2019 no litoral brasileiro, podem provocar graves danos aos ecossistemas marinhos, afetando a fauna e flora e comprometendo a qualidade da água.
                         </li>
                     </ul>
@@ -556,7 +681,7 @@
                         Diante desses problemas, é fundamental que haja um esforço conjunto por parte da sociedade, do governo e das empresas para proteger a água e garantir sua qualidade e disponibilidade. Nesse sentido, a tecnologia da informação surge como uma ferramenta poderosa para solucionar esses problemas, permitindo a adoção de medidas preventivas e corretivas por meio de sistemas de monitoramento, planejamento e alerta.
                     </p>
 
-                    <h2 class="h2 my-5 text-center" id="Aprotecao">
+                    <h2 class="h2 my-5 text-center" id="Agprotecao">
                         Proteção da água: Tecnologia da Informação como solução
                     </h2>
 
@@ -564,13 +689,13 @@
                         A tecnologia da informação tem desempenhado um papel fundamental na proteção da água e garantia de sua qualidade e disponibilidade. Por meio de sistemas de informação, é possível monitorar a qualidade da água em tempo real, identificar fontes de poluição e adotar medidas preventivas para minimizar os impactos.
                     </p>
                     <ul>
-                        <li id="Aesgoto">
+                        <li id="Agesgoto">
                             Um exemplo disso é o uso de sistemas de tratamento de esgoto e gestão adequada de resíduos. Com o auxílio da tecnologia da informação, é possível monitorar a qualidade da água em tempo real, identificar fontes de poluição e adotar medidas preventivas para minimizar os impactos. Além disso, sistemas de informação podem ser utilizados para planejar a construção de novas estações de tratamento de esgoto, otimizando o uso de recursos e evitando gastos desnecessários.
                         </li>
-                        <li id="Aagricola">
+                        <li id="Agagricola">
                             A tecnologia da informação também é útil na promoção de práticas agrícolas sustentáveis. Por meio de sistemas de monitoramento, é possível controlar o uso de agrotóxicos e fertilizantes, reduzindo a contaminação da água por esses produtos. Além disso, sistemas de informação podem ser utilizados para monitorar as práticas de irrigação, garantindo um uso eficiente da água e evitando desperdícios.
                         </li>
-                        <li id="Afiscalizacao">
+                        <li id="Agfiscalizacao">
                             Outra forma em que a tecnologia da informação pode ajudar é por meio da fiscalização rigorosa de indústrias e empreendimentos que possam afetar a qualidade da água. Com o auxílio de sistemas de monitoramento e alerta, é possível detectar rapidamente vazamentos de óleo e produtos químicos, minimizando os danos causados ao meio ambiente. Além disso, sistemas de informação podem ser utilizados para planejar ações de mitigação em caso de acidentes ambientais.
                         </li>
                     </ul>
@@ -578,23 +703,139 @@
                         No Brasil, algumas tecnologias utilizadas para proteção da água incluem sistemas de tratamento de água e esgoto, monitoramento da qualidade da água, programas de gestão de recursos hídricos, entre outros. No entanto, em comparação com outros países, ainda há espaço para aprimoramento e adoção de tecnologias mais avançadas para a proteção da água no Brasil. Por exemplo, países como Alemanha, Japão e Estados Unidos têm investido em tecnologias de monitoramento mais sofisticadas, como sensores e sistemas de inteligência artificial, para detectar rapidamente a presença de contaminantes na água e tomar medidas preventivas.
                     </p>
 
-                    <h2 class="h2 my-5 text-center" id="Aconclusao">
+                    <h2 class="h2 my-5 text-center" id="Agconclusao">
                         Conclusão
                     </h2>
 
-                    <p class="mb-0">
+                    <p>
                         Para concluir este tópico sobre a importância da água e como a tecnologia da informação pode ajudar na sua preservação, recomendamos que você acesse nossa newsletter. A proteção da água é responsabilidade de todos nós, e o uso de tecnologias modernas pode ser um passo importante para garantir a disponibilidade e a qualidade da água para as gerações presentes e futuras. Fique por dentro das novidades e das ações que estão sendo tomadas em todo o mundo para cuidar desse recurso tão importante. 
                         <a href="#secNews" class="text-decoration-underline">
                             Acesse agora e confira!
                         </a>
                     </p>
+
+                    <form action="#" method="post" class="container py-5 bg-agua rounded-5" id="Agquiz" onsubmit="verificarQuiz(this,event)">
+                        <h2 class="h2 mb-5 text-center">
+                            Quiz
+                        </h2>
+                        <ol>
+                            <li id="Agq1" data-quiz="a">
+                                Quais são os principais problemas ambientais relacionados à água mencionados no texto?
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="q1" id="Agq11" value="a" required>
+                                    <label class="form-check-label" for="Agq11">
+                                        Poluição, uso excessivo de agrotóxicos e vazamento de óleo
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="q1" id="Agq12" value="b">
+                                    <label class="form-check-label" for="Agq12">
+                                        Desmatamento, emissão de gases de efeito estufa e urbanização
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="q1" id="Agq13" value="c">
+                                    <label class="form-check-label" for="Agq13">
+                                        Aquecimento global, aumento do nível do mar e escassez hídrica
+                                    </label>
+                                </div>
+                            </li>
+                            <li id="Agq2" data-quiz="b">
+                                Qual é uma das principais fontes de poluição hídrica no Brasil?
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="q2" id="Agq21" value="a" required>
+                                    <label class="form-check-label" for="Agq21">
+                                        Emissão de gases industriais
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="q2" id="Agq22" value="b">
+                                    <label class="form-check-label" for="Agq22">
+                                        Uso excessivo de agrotóxicos na agricultura
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="q2" id="Agq23" value="c">
+                                    <label class="form-check-label" for="Agq23">
+                                        Descarte inadequado de plásticos nos oceanos
+                                    </label>
+                                </div>
+                            </li>
+                            <li id="Agq3" data-quiz="a">
+                                Como a tecnologia da informação pode contribuir para a proteção da água?
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="q3" id="Agq31" value="a" required>
+                                    <label class="form-check-label" for="Agq31">
+                                        Monitorando a qualidade da água em tempo real e identificando fontes de poluição
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="q3" id="Agq32" value="b">
+                                    <label class="form-check-label" for="Agq32">
+                                        Reduzindo o consumo de água nas residências
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="q3" id="Agq33" value="c">
+                                    <label class="form-check-label" for="Agq33">
+                                        Desenvolvendo novos métodos de tratamento de água
+                                    </label>
+                                </div>
+                            </li>
+                            <li id="Agq4" data-quiz="a">
+                                Quais são algumas tecnologias utilizadas para a proteção da água no Brasil?
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="q4" id="Agq41" value="a" required>
+                                    <label class="form-check-label" for="Agq41">
+                                        Sistemas de tratamento de água e esgoto, monitoramento da qualidade da água e programas de gestão de recursos hídricos
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="q4" id="Agq42" value="b">
+                                    <label class="form-check-label" for="Agq42">
+                                        Energia solar, energia eólica e energia nuclear
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="q4" id="Agq43" value="c">
+                                    <label class="form-check-label" for="Agq43">
+                                        Veículos elétricos, reciclagem de plásticos e energia geotérmica
+                                    </label>
+                                </div>
+                            </li>
+                            <li id="Agq5" data-quiz="b">
+                                Em comparação com outros países, o Brasil já adotou tecnologias avançadas para a proteção da água?
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="q5" id="Agq51" value="a" required>
+                                    <label class="form-check-label" for="Agq51">
+                                        Sim, o Brasil está na vanguarda das tecnologias de monitoramento da água
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="q5" id="Agq52" value="b">
+                                    <label class="form-check-label" for="Agq52">
+                                        Não, o Brasil ainda tem espaço para aprimoramento e adoção de tecnologias mais avançadas
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="q5" id="Agq53" value="c">
+                                    <label class="form-check-label" for="Agq53">
+                                        Não, o Brasil é líder mundial em tecnologias de proteção da água
+                                    </label>
+                                </div>
+                            </li>
+                        </ol>
+                        <div class="container d-flex justify-content-end">
+                            <button type="submit" class="btn btn-primary me-0" id="btnQuiz">Verificar</button>
+                        </div>
+                    </form>
                 </div>
             </article>
         </div>
     </section>
 
     <!--FOGO-->
-    <section class="sec container-fluid elemento d-none" id="fogo">
+    <section class="sec container-fluid elemento" id="fogo">
         <div class="row h-100">
             <!--ASIDE-->
             <aside class="col-xl-3 py-5 border-end border-1 border-black border-opacity-25">
@@ -660,31 +901,6 @@
                                 Quiz
                             </a>
                         </dt>
-                        <dd>
-                            <a href="#Fq1" class="secundario">
-                                Qual é a importância da tecnologia da informação no monitoramento de queimadas?
-                            </a>
-                        </dd>
-                        <dd>
-                            <a href="#Fq2" class="secundario">
-                                Como a tecnologia da informação pode ajudar na prevenção de queimadas?
-                            </a>
-                        </dd>
-                        <dd>
-                            <a href="#Fq3" class="secundario">
-                                Qual é a principal fonte de dados sobre queimadas no Brasil?
-                            </a>
-                        </dd>
-                        <dd>
-                            <a href="#Fq4" class="secundario">
-                                Qual é a importância da tecnologia da informação na gestão das queimadas?
-                            </a>
-                        </dd>
-                        <dd>
-                            <a href="#Fq5" class="secundario">
-                                Qual é o papel da tecnologia da informação no desenvolvimento de soluções?
-                            </a>
-                        </dd>
                         <dt class="mb-0">
                             <a href="#secNews" class="titulo border-1 border-black border-bottom">
                                 Assine conosco
@@ -777,111 +993,111 @@
                         Além disso, é necessário promover e apoiar a conscientização e a educação da população por meio da tecnologia. Isso envolve o uso de recursos tecnológicos para incentivar e facilitar o acesso à informação, de modo a aumentar a compreensão dos impactos negativos das queimadas e do desmatamento, bem como promover a adoção de práticas sustentáveis. <span class="cFogo">Caso deseje testar seus conhecimentos após a leitura faça o quiz!</span>
                     </p>
 
-                    <form action="#" method="post" class="container py-5 bg-warning rounded-5" id="Fquiz" onsubmit="verificarQuiz(event)">
+                    <form action="#" method="post" class="container py-5 bg-fogo rounded-5" id="Fquiz" onsubmit="verificarQuiz(this,event)">
                         <h2 class="h2 mb-5 text-center">
                             Quiz
                         </h2>
                         <ol>
-                            <li id="Fq1">
+                            <li id="Fq1" data-quiz="b">
                                 Qual é a importância da tecnologia da informação no monitoramento de queimadas?
                                 <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="Fq1" id="Fq11" value="a" required>
+                                    <input class="form-check-input" type="radio" name="q1" id="Fq11" value="a" required>
                                     <label class="form-check-label" for="Fq11">
                                         Não tem importância
                                     </label>
                                 </div>
                                 <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="Fq1" id="Fq12" value="b">
+                                    <input class="form-check-input" type="radio" name="q1" id="Fq12" value="b">
                                     <label class="form-check-label" for="Fq12">
                                         Facilita o compartilhamento de informações sobre queimadas
                                     </label>
                                 </div>
                                 <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="Fq1" id="Fq13" value="c">
+                                    <input class="form-check-input" type="radio" name="q1" id="Fq13" value="c">
                                     <label class="form-check-label" for="Fq13">
                                         Aumenta o número de queimadas
                                     </label>
                                 </div>
                             </li>
-                            <li id="Fq2">
+                            <li id="Fq2" data-quiz="b">
                                 Como a tecnologia da informação pode ajudar na prevenção de queimadas?
                                 <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="Fq2" id="Fq21" value="a" required>
+                                    <input class="form-check-input" type="radio" name="q2" id="Fq21" value="a" required>
                                     <label class="form-check-label" for="Fq21">
                                         Por meio do monitoramento constante do clima
                                     </label>
                                 </div>
                                 <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="Fq2" id="Fq22" value="b">
+                                    <input class="form-check-input" type="radio" name="q2" id="Fq22" value="b">
                                     <label class="form-check-label" for="Fq22">
                                         Por meio da identificação de áreas de risco
                                     </label>
                                 </div>
                                 <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="Fq2" id="Fq23" value="c">
+                                    <input class="form-check-input" type="radio" name="q2" id="Fq23" value="c">
                                     <label class="form-check-label" for="Fq23">
                                         Por meio da produção de mais combustíveis fósseis
                                     </label>
                                 </div>
                             </li>
-                            <li id="Fq3">
+                            <li id="Fq3" data-quiz="a">
                                 Qual é a principal fonte de dados sobre queimadas no Brasil?
                                 <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="Fq3" id="Fq31" value="a" required>
+                                    <input class="form-check-input" type="radio" name="q3" id="Fq31" value="a" required>
                                     <label class="form-check-label" for="Fq31">
                                         Satélites
                                     </label>
                                 </div>
                                 <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="Fq3" id="Fq32" value="b">
+                                    <input class="form-check-input" type="radio" name="q3" id="Fq32" value="b">
                                     <label class="form-check-label" for="Fq32">
                                         Redes sociais
                                     </label>
                                 </div>
                                 <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="Fq3" id="Fq33" value="c">
+                                    <input class="form-check-input" type="radio" name="q3" id="Fq33" value="c">
                                     <label class="form-check-label" for="Fq33">
                                         Telejornais
                                     </label>
                                 </div>
                             </li>
-                            <li id="Fq4">
+                            <li id="Fq4" data-quiz="b">
                                 Qual é a importância da tecnologia da informação na gestão de crises relacionadas a queimadas?
                                 <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="Fq4" id="Fq41" value="a" required>
+                                    <input class="form-check-input" type="radio" name="q4" id="Fq41" value="a" required>
                                     <label class="form-check-label" for="Fq41">
                                         Não tem importância
                                     </label>
                                 </div>
                                 <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="Fq4" id="Fq42" value="b">
+                                    <input class="form-check-input" type="radio" name="q4" id="Fq42" value="b">
                                     <label class="form-check-label" for="Fq42">
                                         Ajuda a coordenar o trabalho das equipes de combate a incêndios
                                     </label>
                                 </div>
                                 <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="Fq4" id="Fq43" value="c">
+                                    <input class="form-check-input" type="radio" name="q4" id="Fq43" value="c">
                                     <label class="form-check-label" for="Fq43">
                                         Causa mais danos ao meio ambiente
                                     </label>
                                 </div>
                             </li>
-                            <li id="Fq5">
+                            <li id="Fq5" data-quiz="b">
                                 Qual é o papel da tecnologia da informação no desenvolvimento de soluções para reduzir as queimadas?
                                 <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="Fq5" id="Fq51" value="a" required>
+                                    <input class="form-check-input" type="radio" name="q5" id="Fq51" value="a" required>
                                     <label class="form-check-label" for="Fq51">
                                         Não tem papel algum
                                     </label>
                                 </div>
                                 <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="Fq5" id="Fq52" value="b">
+                                    <input class="form-check-input" type="radio" name="q5" id="Fq52" value="b">
                                     <label class="form-check-label" for="Fq52">
                                         Ajuda a criar sistemas de alerta precoce
                                     </label>
                                 </div>
                                 <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="Fq5" id="Fq53" value="c">
+                                    <input class="form-check-input" type="radio" name="q5" id="Fq53" value="c">
                                     <label class="form-check-label" for="Fq53">
                                         Aumenta o número de queimadas
                                     </label>
@@ -898,7 +1114,7 @@
     </section>
 
     <!--AR-->
-    <section class="sec container-fluid elemento d-none" id="ar">
+    <section class="sec container-fluid elemento" id="ar">
         <div class="row h-100">
             <!--ASIDE-->
             <aside class="col-xl-3 py-5 border-end border-1 border-black border-opacity-25">
@@ -915,30 +1131,35 @@
                             </a>
                         </dt>
                         <dt>
-                            <a href="#Amundo" class="titulo">
+                            <a href="#Armundo" class="titulo">
                                 Mundo
                             </a>
                         </dt>
                         <dt>
-                            <a href="#Aar" class="titulo">
+                            <a href="#Arar" class="titulo">
                                 Ar
                             </a>
                         </dt>
                         <dt>
-                            <a href="#Aindustria" class="titulo">
+                            <a href="#Arindustria" class="titulo">
                                 Indústria
                             </a>
                         </dt>
                         <dt>
-                            <a href="#Amobilidade" class="titulo">
+                            <a href="#Armobilidade" class="titulo">
                                 MOBILIDADE E TRANSPORTE SUSTENTÁVEL
 
                             </a>
                         </dt>
                         <dt>
-                            <a href="#Aenergia" class="titulo">
+                            <a href="#Arenergia" class="titulo">
                                 Energia renovável
 
+                            </a>
+                        </dt>
+                        <dt>
+                            <a href="#Arquiz" class="titulo">
+                                Quiz
                             </a>
                         </dt>
                         <dt class="mb-0">
@@ -959,7 +1180,7 @@
                         O papel da tecnologia da informação na luta contra a poluição do ar
                     </h1>
 
-                    <h2 class="h2 my-5 text-center" id="Amundo">
+                    <h2 class="h2 my-5 text-center" id="Armundo">
                         MUNDO
                     </h2>
                     
@@ -971,7 +1192,7 @@
                         <img src="./recursos/imagens/ar/mundo.webp" alt="imagem" width="70%">
                     </p>
 
-                    <h2 class="h2 my-5 text-center" id="Aar">
+                    <h2 class="h2 my-5 text-center" id="Arar">
                         Ar
                     </h2>
                     <p>
@@ -981,7 +1202,7 @@
                         <img src="./recursos/imagens/ar/ar.png" alt="imagem" width="70%">
                     </p>
                     
-                    <h2 class="h2 my-5 text-center" id="Aindustria">
+                    <h2 class="h2 my-5 text-center" id="Arindustria">
                         INDÚSTRIA
                     </h2>
 
@@ -992,7 +1213,7 @@
                         <img src="./recursos/imagens/ar/industria.jpg" alt="imagem" width="70%">
                     </p>
 
-                    <h2 class=" h2 my-5 text-center" id="Amobilidade">
+                    <h2 class=" h2 my-5 text-center" id="Armobilidade">
                         MOBILIDADE E TRANSPORTE SUSTENTÁVEL
                     </h2>
 
@@ -1003,7 +1224,7 @@
                         <img src="./recursos/imagens/ar/mobilidade.webp" alt="Imagem" width="70%">
                     </p>
 
-                    <h2 class="h2 my-5 text-center" id="Aenergia">
+                    <h2 class="h2 my-5 text-center" id="Arenergia">
                         ENERGIA RENOVÁVEL
                     </h2>
 
@@ -1014,9 +1235,125 @@
                     <p class="text-center">
                         <img src="./recursos/imagens/ar/energia.jpeg" alt="Imagem" width="70%">
                     </p>
-                    <p class="mb-0">
+                    <p>
                         Em conclusão, a tecnologia da informação desempenha um papel vital no combate à poluição do ar, oferecendo soluções inovadoras e eficientes. Com sua aplicação eficiente e sustentável, podemos avançar em direção a um futuro mais verde, reduzindo os impactos negativos da poluição do ar no meio ambiente e na saúde humana. Além das abordagens mencionadas, a tecnologia da informação impulsiona o desenvolvimento de dispositivos de controle de poluição, otimiza o consumo de energia e facilita a implementação de políticas ambientais eficazes. No entanto, é necessário combinar essas soluções tecnológicas com esforços contínuos de conscientização e educação ambiental. O engajamento da sociedade é essencial para garantir a eficácia das soluções tecnológicas e a adoção de medidas individuais e coletivas para reduzir a poluição do ar. É crucial continuar investindo em pesquisa e desenvolvimento, promover parcerias entre setores público e privado e adotar uma abordagem multidisciplinar para enfrentar o desafio da poluição do ar e criar um ambiente saudável e sustentável para as gerações futuras.
                     </p>
+
+                    <form action="#" method="post" class="container py-5 bg-ar rounded-5" id="Arquiz" onsubmit="verificarQuiz(this,event)">
+                        <h2 class="h2 mb-5 text-center">
+                            Quiz
+                        </h2>
+                        <ol>
+                            <li id="Arq1" data-quiz="b">
+                                Como a tecnologia da informação pode ajudar a combater a poluição do ar?
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="q1" id="Arq11" value="a" required>
+                                    <label class="form-check-label" for="Arq11">
+                                        Monitorando a qualidade do solo
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="q1" id="Arq12" value="b">
+                                    <label class="form-check-label" for="Arq12">
+                                        Controlando a emissão de poluentes industriais
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="q1" id="Arq13" value="c">
+                                    <label class="form-check-label" for="Arq13">
+                                        Reduzindo o consumo de água
+                                    </label>
+                                </div>
+                            </li>
+                            <li id="Arq2" data-quiz="b">
+                                Qual é uma das formas em que a tecnologia da informação contribui para a redução da poluição do ar na indústria?
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="q2" id="Arq21" value="a" required>
+                                    <label class="form-check-label" for="Arq21">
+                                        Promovendo a utilização de combustíveis fósseis
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="q2" id="Arq22" value="b">
+                                    <label class="form-check-label" for="Arq22">
+                                        Otimizando o consumo de energia e recursos naturais
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="q2" id="Arq23" value="c">
+                                    <label class="form-check-label" for="Arq23">
+                                        Aumentando a produção de resíduos industriais
+                                    </label>
+                                </div>
+                            </li>
+                            <li id="Arq3" data-quiz="a">
+                                Como os aplicativos móveis e plataformas online podem ajudar a reduzir a poluição do ar relacionada à mobilidade e transporte?
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="q3" id="Arq31" value="a" required>
+                                    <label class="form-check-label" for="Arq31">
+                                        Fornecendo informações sobre a qualidade do ar em tempo real
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="q3" id="Arq32" value="b">
+                                    <label class="form-check-label" for="Arq32">
+                                        Aumentando o número de veículos nas estradas
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="q3" id="Arq33" value="c">
+                                    <label class="form-check-label" for="Arq33">
+                                        Reduzindo o uso de transporte público
+                                    </label>
+                                </div>
+                            </li>
+                            <li id="Arq4" data-quiz="a">
+                                Como a tecnologia da informação contribui para o desenvolvimento de energia limpa e eficiência energética?
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="q4" id="Arq41" value="a" required>
+                                    <label class="form-check-label" for="Arq41">
+                                        Otimizando o consumo de energia em edifícios
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="q4" id="Arq42" value="b">
+                                    <label class="form-check-label" for="Arq42">
+                                        Aumentando a dependência de combustíveis fósseis
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="q4" id="Arq43" value="c">
+                                    <label class="form-check-label" for="Arq43">
+                                        Minimizando a importância das energias renováveis
+                                    </label>
+                                </div>
+                            </li>
+                            <li id="Arq5" data-quiz="b">
+                                Por que é importante combinar soluções tecnológicas com esforços de conscientização e educação ambiental na luta contra a poluição do ar?
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="q5" id="Arq51" value="a" required>
+                                    <label class="form-check-label" for="Arq51">
+                                        Para criar um ambiente mais poluído
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="q5" id="Arq52" value="b">
+                                    <label class="form-check-label" for="Arq52">
+                                        Para garantir a eficácia das soluções tecnológicas
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="q5" id="Arq53" value="c">
+                                    <label class="form-check-label" for="Arq53">
+                                        Para aumentar a dependência de combustíveis fósseis
+                                    </label>
+                                </div>
+                            </li>
+                        </ol>
+                        <div class="container d-flex justify-content-end">
+                            <button type="submit" class="btn btn-primary me-0" id="btnQuiz">Verificar</button>
+                        </div>
+                    </form>
                 </div>
             </article>
         </div>
